@@ -1,4 +1,7 @@
-package com.alanensina.springdemo;
+package com.alanensina.springdemo.app;
+
+import com.alanensina.springdemo.interfaces.Coach;
+import com.alanensina.springdemo.model.TrackCoach;
 
 public class MyApp {
 
@@ -6,7 +9,7 @@ public class MyApp {
 
 		// Create the object
 		// Coach theCoach = new BaseballCoach();
-		Coach theCoach = new TrackCoach();
+		 Coach theCoach = new TrackCoach();
 
 		// Use the object
 		System.out.println(theCoach.getDailyWorkout());
