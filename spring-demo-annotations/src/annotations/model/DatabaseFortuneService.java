@@ -5,11 +5,11 @@ import org.springframework.stereotype.Component;
 import annotations.FortuneService;
 
 @Component
-public class HappyFortuneService implements FortuneService {
+public class DatabaseFortuneService implements FortuneService {
 
     @Override
     public String getFortune() {
-        return "Today is your lucky day!";
+        return "DatabaseFortuneService: getFortune()";
     }
 
 }
