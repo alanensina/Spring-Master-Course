@@ -2,12 +2,14 @@ package annotations;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 import annotations.model.SadFortuneService;
 import annotations.model.SwimCoach;
 
 @Configuration
 //@ComponentScan("annotations")
+@PropertySource("classpath:sport.properties")
 public class SportConfig {
 
     // Define bean for our sad fortune service
